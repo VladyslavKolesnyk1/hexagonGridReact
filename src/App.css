@@ -1,0 +1,66 @@
+.App {
+  text-align: center;
+}
+
+body{
+  background-color: #02001d;
+}
+
+
+.app-header {
+  background-color: #282c34;
+  display: flex;
+  padding: 1em;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+}
+
+
+
+.hex-wrapper {
+  margin-bottom: 20px;
+  z-index: 2;
+  margin-left: 30px;
+}
+
+.hexagon {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 920px;
+  height: 531.16px;
+  background-color: #14063d;
+  margin: 265.58px auto;
+}
+
+.hexagon:before,
+.hexagon:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  border-left: 460px solid transparent;
+  border-right: 460px solid transparent;
+}
+
+.hexagon:before {
+  bottom: 100%;
+  border-bottom: 175px solid #14063d;
+}
+
+.hexagon:after {
+  top: 100%;
+  width: 0;
+  border-top: 175px solid #14063d;
+}
+
+
+
